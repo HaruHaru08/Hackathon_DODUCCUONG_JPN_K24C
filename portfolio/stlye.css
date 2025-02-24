@@ -1,7 +1,7 @@
 :root{
     --text-color:#4B5563;
     --bgr-color:#FFFFFF;
-    --btn-color:#4B5563;
+    --btn-color:#E5E7EB;
     --font-one:"Inter";
 }
 *{
@@ -99,20 +99,26 @@ header .gt .diachi{
 header .gt .diachi p:nth-of-type(1){
     padding-bottom: 10px;
 }
+.gt .diachi span i{
+    background-color: #10B981;
+}
 header .gt .icon{
     display: flex;
     justify-content: flex-start;
     gap: 20px;
     background-color: white;
 }
+header .gt .icon i{
+    font-size: 30px;
+    background-color: white;
+}
 header .anh{
     width: 400px;
     height: 360px;
 }
-header div img{
-    margin-right: 32px;
-    box-shadow: -5px 10px 0px white;
-    border: 5px solid gray/200;
+header .anh img{
+    margin-right: 152px;
+    box-shadow: 30px 30px 0px #E5E7EB;
 }
 @media screen and (max-width:740px){
     header{
@@ -126,10 +132,17 @@ header div img{
     }
     header .anh{
         order: 1;
-        width: 240px;
+        width:240px;
         height: 280px;
         margin-top: 64px;
         margin-bottom: 48px;
+    }
+    header .anh img{
+        box-shadow:none;
+        width:240px;
+        height: 280px;
+        border: 10px solid #E5E7EB;
+        border-top:0px ;
     }
     header .gt{
         order: 2;
@@ -161,38 +174,37 @@ header div img{
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    color: white;
 }
 .skills p{
     font-size: 20px;
 }
-.skills .logo {
+.skills .khung-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin-top: 48px;
+}
+.khung-logo .logo{
+    display: flex;
+    gap: 97px;
+    margin-bottom: 0;
+}
+.khung-logo .logo img:nth-of-type(2){
+    margin-left: 10px;
+}
+.skills .khung-logo .name{
     display: flex;
     flex-direction: row;
-    margin-left: 32px;
-    margin-right: 32px;
-}
-.skills .logo img{
-    margin-top: 48px;
-    margin-left: 32px;
-    margin-right: 32px;
-}
-.skills .ungdung{
-    display: flex;
-    margin-top: 20px;
-    gap: 59.5px;
+    gap: 90px;
+    margin-top: 0px;
 }
 .work{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.work .tieude{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 96px 80px;
 }
 .work button{
     background-color: var(--btn-color);
@@ -201,9 +213,199 @@ header div img{
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    color: white;
 }
 .work .tuychon-one{
     display: flex;
+    width: 1152px;
+    height: 480px;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 64px;
+}
+.work .tuychon-one .nenanh{
+    background-color: #F9FAFB;
+    width: 576px;
+    height: 480px;
+}
+.work .tuychon-one .nenanh img{
+    width: 480px;
+    height: 384px;
+    margin: 48px;
+}
+.tuychon-one .text{
+    display: flex;
+    flex-direction: column;
+    width: 576px;
+    height: 480px;
+}
+.work .tuychon-one .text h4 {
+    margin: 48px;
+    margin-bottom: 24px;
+}
+.work .tuychon-one .text p{
+    margin: 0px 48px;
+    margin-bottom: 24px;
+}
+.work .tuychon-one .text .button-work{
+    margin: 0px 48px;
+    margin-bottom: 24px;
+}
+.button-work button{
+    margin-right: 5px;
+}
+.text a i{
+    margin: 0px 48px;
+    margin-bottom: 24px;
+}
+.work .tuychon-second{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1152px;
+    height: 480px;
+    margin: 48px 64px;
+}
+.work .tuychon-second .text{
+    display: flex;
+    flex-direction: column;
+    width: 576px;
+    height: 480px;
+}
+.work .tuychon-second .text h4 {
+    margin: 48px;
+    margin-bottom: 24px;
+}
+.work .tuychon-second .text p{
+    margin: 0px 48px;
+    margin-bottom: 24px;
+}
+.work .tuychon-second .text .button-work{
+    margin: 0px 48px;
+    margin-bottom: 24px;
+}
+.button-work button{
+    margin-right: 5px;
+}
+.work .tuychon-second .nenanh{
+    background-color: #F9FAFB;
+    width: 576px;
+    height: 480px;
+}
+.work .tuychon-second .nenanh img{
+    width: 480px;
+    height: 384px;
+    margin: 48px;
+}
+.khungcuoitrang{
+    background-color: #F9FAFB;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 68px;
+}
+.linkcuoitrang a{
+    text-decoration: underline;
+}
+.khungcuoitrang .linkcuoitrang{
+    width: 1280px;
+    height: 20px;
+    font-size: 14px;
+}
+@media screen and (max-width:740px){
+    .skills{
+        width: 375;
+        height: 580px;
+    }
+    .skills .logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .work button{
+        display: block;
+        flex-direction: column;
+    }
+    .work p{
+        font-size: 18px;
+    }
+    .work .tuychon-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 342px;
+        height: 664px;
+    }
+    .tuychon-one .text{
+        display: flex;
+        flex-direction: column;
+        width: 343px;
+        height: 408px;
+    }
+    .work .tuychon-one .nenanh{
+        background-color: #F9FAFB;
+        width: 343px;
+        height: 256px;
+    }
+    .work .tuychon-one .nenanh img{
+        width: 279px;
+        height: 192px;
+        margin: 32px;
+    }
+    .work .tuychon-one .text .button-work{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .work .tuychon-second{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 343px;
+        height: 664px;
+        margin-bottom: 64px;
+    }
+    .work .tuychon-second .text{
+        display: flex;
+        flex-direction: column;
+        width: 343px;
+        height: 408px;
+    }
+    .work .tuychon-second .nenanh{
+        background-color: #F9FAFB;
+        width: 343px;
+        height: 256px;
+    }
+    .work .tuychon-second .nenanh img{
+        width: 279px;
+        height: 192px;
+        margin: 32px;
+    }
+    .work .tuychon-second .text .button-work{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .work .tuychon-second .nenanh{
+        order: 1;
+    }
+    .work .tuychon-second .text{
+        order: 2;
+    }
+    .text a i{
+        margin: 0px 48px;
+        margin-top: 24px;
+    }
 }
